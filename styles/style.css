@@ -1,0 +1,117 @@
+/*****************************************************************************
+**
+**    Title:      style.css
+**    Project:    Product Landing Page
+**    Author:     Joe Cohen
+**    Contact:    <deskofjoe@gmail.com>
+**    GitHub:     https://github.com/cojohen
+**
+**    Copyright 2021 Joe Cohen -- Permission is hereby granted, free of
+**    charge, to any person obtaining a copy of this software and 
+**    associated documentation files (the "Software"), to deal in the 
+**    Software without restriction, including without limitation the 
+**    rights to use, copy, modify, merge, publish, distribute, sublicense,
+**    and/or sell copies of the Software, and to permit persons to whom 
+**    the Software is furnished to do so, subject to the following 
+**    conditions:
+**
+**    The above copyright notice and this permission notice shall be included 
+**    in all copies or substantial portions of the Software.
+** 
+*****************************************************************************/
+
+body {
+    background: #f1faee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: #e63746;
+}
+
+nav {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#nav-links {
+    float: right;
+    position: relative;
+    height: 90px;
+    margin: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-links a {
+    color: #1D3557;
+    text-decoration: none; 
+    padding: 2em;
+    margin: 0 2em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header {
+    height: 85px;
+}
+
+#header-img {
+    height: auto;
+    max-width: 100px;
+    margin: 0 4em;
+    margin-left: 25%;
+
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2em 5em;
+    background: #1D3557;
+    color: #f1faee;  
+}
+
+main p { 
+    padding: 1em;
+    line-height: 1.3em;
+}
+
+#video {
+    margin: 3em auto;
+    text-align: center;
+}
+
+#form {
+    background: #e63746;
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+}
+
+#form h3 {
+    color: #f1faee;
+    margin-top: 0em;
+    text-shadow: 0 0 3px black;
+}
+
+@media screen and (max-width: 500px){
+    main { padding: 1em;}
+}
+@media screen and (max-width: 1292px){
+    #nav-links {
+        margin: 0;
+        width: 100%;
+        float: none;
+    }
+    nav { text-align: center; }
+    
+    #header-img { margin: 0;}
+
+    main {margin-top: 85px;}
+}    
